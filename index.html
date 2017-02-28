@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>JavaScript Animation Memes</h1>
+
+<a href = ssdp.html>
+<b><p id="ssdp"></p>
+</b></a>
+
+<script>
+  function pick1(array) {
+    min = 0;
+  	max = array.length;
+  	index = Math.floor(Math.random() * (max - min)) + min;
+    return array[index];
+  }
+
+  var same = ["Carbon Copied ", "Cloned ", "Duplicate ", "Equal ", "Equivalent ", "Twin ", "Xeroxed ", "Coequal ", 
+  "Comparable ", "Compatible ", "Corresponding ", "Indistinguishable ", "Interchangeable ", "Related ", "Similar ", 
+  "Synonymous ", "Tantamount "];
+  
+  var sht = ["Excrement, ","Crap, ", "Poop, ", "Bowel Movements, ", "Defecation, ", "Discharge, ", "Dung, ", "Excretion, ", "Fecal Matter, ", 
+  "Feces, ", "Feculence, ", "Deuce, ", "Manure, ", "Number Two, ", "Stool, ", "Waste Product, "];
+  
+var different = ["Diverse ", "Other ", "Particular ", "Peculiar ", "Specific ", "Strange ", "Bizzare ", "Unique ", 
+  "Various ", "Discrete ", "Individual ", "Several ", "Specialized "];
+
+var piles = ["Accumulations", "Assortments", "Chunks", "Hills", "Clusters", "Clumps", "Masses", "Mountains", "Quantities", "Stacks", "Stockpiles", "Aggregates", "Aggregations", "Assemblage", "Barrels", "Conglomerations", "Gobs", "Hoards", "Mounds", "Amassments"];
+
+songTitle = pick1(same) + pick1(sht) + pick1(different) + pick1(piles);
+
+ document.getElementById("ssdp").innerHTML = songTitle;
+</script>
+
+</body>
+</html> 
