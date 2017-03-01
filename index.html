@@ -20,7 +20,7 @@
     <a href="https://www.khanacademy.org/computing/computer-programming/programming" target="_blank">JavaScript tutorials</a>.
 For more information, visit <a href="https://code4liberty.wordpress.com/js/">code4liberty.wordpress.com/js</a>
     
-<a href = ssdp.html><p class="project" id="ssdp"></p></a>
+<p class="project" id="ssdp"></p>
     
   <!-- add links to your projects here -->  
   <!-- Delete this line. Change next line
@@ -51,6 +51,7 @@ var different = ["Diverse ", "Other ", "Particular ", "Peculiar ", "Specific ", 
 var piles = ["Accumulations", "Assortments", "Chunks", "Hills", "Clusters", "Clumps", "Masses", "Mountains", "Quantities", "Stacks", "Stockpiles", "Aggregates", "Aggregations", "Assemblage", "Barrels", "Conglomerations", "Gobs", "Hoards", "Mounds", "Amassments"];
 
 songTitle = pick1(same) + pick1(sht) + pick1(different) + pick1(piles);
+songTitle = "<a href=ssdp.html>" + songTitle + "</a>"; 
 
  document.getElementById("ssdp").innerHTML = songTitle;
 </script>
